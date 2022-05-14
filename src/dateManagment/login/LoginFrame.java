@@ -8,16 +8,16 @@ import java.awt.event.ActionListener;
 public class LoginFrame extends JFrame implements ActionListener {
 
     Container container = getContentPane();
-    JLabel userLabel = new JLabel("USERNAME");
-    JLabel passwordLabel = new JLabel("PASSWORD");
+    JLabel userLabel = new JLabel("Username");
+    JLabel passwordLabel = new JLabel("Password");
     JTextField userTextField = new JTextField();
     JPasswordField passwordField = new JPasswordField();
-    JButton loginButton = new JButton("LOGIN");
-    JButton resetButton = new JButton("RESET");
-    JCheckBox showPassword = new JCheckBox("SHOW PASSWORD");
+    JButton loginButton = new JButton("Login");
+    JButton resetButton = new JButton("Reset");
+    JCheckBox showPassword = new JCheckBox("Show password");
 
     //Costruttore
-    LoginFrame(){
+    public LoginFrame(){
         //Chiamata dei metodi
         setLayoutManager();
         setLocationAndSize();
@@ -31,12 +31,13 @@ public class LoginFrame extends JFrame implements ActionListener {
     }
     public void setLocationAndSize(){
         //Impostazione delle misure dei componenti
-        userLabel.setBounds(50,150,100,30);
-        userTextField.setBounds(150,150,150,30);
-        passwordLabel.setBounds(50,220,100,30);
-        passwordField.setBounds(150,220,150,30);
-        showPassword.setBounds(150,250, 150, 30);
-        resetButton.setBounds(200,300,100,30);
+        userLabel.setBounds(50,75,100,30);
+        userTextField.setBounds(150,75,150,30);
+        passwordLabel.setBounds(50,110,100,30);
+        passwordField.setBounds(150,110,150,30);
+        showPassword.setBounds(150,135, 150, 30);
+        resetButton.setBounds(200,170,100,30);
+        loginButton.setBounds(50,170,100,30);
     }
     public void addComponentsToContainer(){
 
@@ -95,7 +96,7 @@ class Login{
         LoginFrame frame = new LoginFrame();
         frame.setTitle("Login Form");
         frame.setVisible(true);
-        frame.setBounds(10,10,370,600);
+        frame.setBounds(10,10,370,300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
     }
