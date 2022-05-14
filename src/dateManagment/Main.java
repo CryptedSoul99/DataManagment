@@ -1,4 +1,4 @@
-package DateManagment;
+package dateManagment;
 
 public class Main {
 }
