@@ -52,12 +52,10 @@ public class LoginFrame extends JFrame implements ActionListener {
         container.add(resetButton);
     }
     public void addActionEvent(){
-
         //aggiunta dell'action listner ai componenti
         loginButton.addActionListener(this);
         resetButton.addActionListener(this);
         showPassword.addActionListener(this);
-
     }
 
     @Override
