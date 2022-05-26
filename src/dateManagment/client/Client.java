@@ -28,8 +28,8 @@ public class Client extends JFrame implements ActionListener {
     public void setLocationAndSize(){
         homeButton.setBounds(50, 700, 180, 100);
         productButton.setBounds(350, 700, 180, 100);
-        reportButton.setBounds(650, 700, 180, 100);
-        transactionButton.setBounds(950, 700, 180, 100);
+        transactionButton.setBounds(650, 700, 180, 100);
+        reportButton.setBounds(950, 700, 180, 100);
         logoffButton.setBounds(1250, 700, 180, 100);
     }
     public void addComponentToContainer(){

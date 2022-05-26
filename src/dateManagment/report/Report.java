@@ -1,7 +1,5 @@
 package dateManagment.report;
 
-import dateManagment.homePage.HomePage;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,7 +8,6 @@ import java.awt.event.ActionListener;
 public class Report extends JFrame implements ActionListener {
 
     Container container = getContentPane();
-    JFrame frame = new JFrame();
     JButton clientButton = new JButton("Nuovo Cliente");
     JButton productButton = new JButton("Nuovo Prodotto");
     JButton transactionButton = new JButton("Emetti Ricevuta");
@@ -32,17 +29,24 @@ public class Report extends JFrame implements ActionListener {
     public void setLocationAndSize(){
         //Metodo di impostazione delle componenti
         homeButton.setBounds(50, 700, 180, 100);
-        productButton.setBounds(350, 700, 180, 100);
-        //CAMBIARE POSIZIONE TASTI
-        clientButton.setBounds(650, 700, 180, 100);
+        clientButton.setBounds(350, 700, 180, 100);
+        productButton.setBounds(650, 700, 180, 100);
         transactionButton.setBounds(950, 700, 180, 100);
         logoffButton.setBounds(1250, 700, 180, 100);
     }
     public void addComponentToContainer(){
-
+        container.add(clientButton);
+        container.add(productButton);
+        container.add(logoffButton);
+        container.add(transactionButton);
+        container.add(homeButton);
     }
     public void addActionEvent(){
-
+        homeButton.addActionListener(this);
+        clientButton.addActionListener(this);
+        productButton.addActionListener(this);
+        transactionButton.addActionListener(this);
+        logoffButton.addActionListener(this);
     }
 
     @Override
